@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS.css">
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+
+    <title>世月センの創作まとめ</title>
+    <style>
+
+  body {
+      margin: 0;
+    }
+
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+        body {
+            font-family: "Yomogi", sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #FFF2FB; /* ぴんく */
+            color: #333;
+            line-height: 1.8;
+font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            background: #ffd7ef;
+            border-radius: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #ffbee6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d94c9f;
+        }
+
+        h2 {
+            border-left: 6px solid #ff9ccd;
+            padding-left: 10px;
+            margin-top: 40px;
+            color: #c8388b;
+        }
+
+        .character {
+            border: 1px solid #e8b7d2;
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .character img {
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        .character-info {
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body class="henpuku">
+
+<div class="bg" style="background-image: url('images/haikei4.png');"></div>
+
+<h1 class="title-image animate-title">
+  <img src="images/hennpuku.png" alt="へんぷくすてっぷ">
+</h1>
+
+
+<p class="title-desc animate-desc text-bg" style="color: #8c3f5d;">
+かわいい！説明不要！<br>
+最強を目指すコウモリの子供りぃりと、そのまわりの人たちが、<br>
+遊んだり喧嘩したり、一緒に最強を目指してみたり大騒ぎ！<br>
+そんな平和な日常を、ちょっとだけ覗いてみよう！<br>
+
+
+<div class="character-area">
+<h2 class="char-section animate-slide">キャラクター紹介</h2>
+
+
+
+  <div class="accordion animate-slide">
+  <button class="accordion-btn img-button">
+    <img src="images/work2/Riiri2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/Riiri.png" alt="りぃり">
+  </div>
+</div>
+
+  <div class="accordion animate-slide">
+  <button class="accordion-btn img-button">
+    <img src="images/work2/Reere2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/Reere.png" alt="れぇれ">
+  </div>
+</div>
+
+
+ <div class="accordion animate-slide">
+ <button class="accordion-btn img-button">
+    <img src="images/work2/Ring2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/Ring.png" alt="Ring">
+  </div>
+</div>
+
+
+  <div class="accordion animate-slide">
+ <button class="accordion-btn img-button">
+    <img src="images/work2/Sumomo2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/Sumomo.png" alt="すもも">
+  </div>
+</div>
+
+
+  <div class="accordion animate-slide">
+ <button class="accordion-btn img-button">
+    <img src="images/work2/Kukuma2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/Kukuma.png" alt="くくま">
+  </div>
+</div>
+
+
+  <div class="accordion animate-slide">
+ <button class="accordion-btn img-button">
+    <img src="images/work2/Osame2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/Osame.png" alt="オサメ">
+  </div>
+</div>
+
+ <div class="accordion animate-slide">
+ <button class="accordion-btn img-button">
+    <img src="images/work2/syany2.png" alt="ボタン">
+  </button>
+
+  <div class="accordion-content">
+    <img src="images/work2/syany.png" alt="シャニー">
+  </div>
+</div>
+
+
+
+
+<script>
+  const btns = document.querySelectorAll(".accordion-btn");
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
+document.addEventListener("DOMContentLoaded", () => {
+  
+  // ③ の animate-slide 要素をすべて取得
+  const slides = document.querySelectorAll(".animate-slide");
+
+  slides.forEach((el, index) => {
+    el.style.animationDelay = (1.2 + index * 0.25) + "s";
+    // ①(0s) → ②(0.6s) → ③開始(1.2s〜) という流れ
+  });
+
+});
+
+</script>
+<script>
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions.forEach(acc => {
+    const btn = acc.querySelector('.accordion-btn');
+    const content = acc.querySelector('.accordion-content');
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.classList.contains('active');
+
+      // まず全部閉じる
+      accordions.forEach(other => {
+        other.querySelector('.accordion-btn').classList.remove('active');
+        other.querySelector('.accordion-content').style.maxHeight = null;
+      });
+
+      // さっき閉じてたやつなら開く
+      if (!isOpen) {
+        btn.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+
+
+</div>
+<br>
+<nav>
+    <a href="index.html">もどる</a>
+    <a href="work1.html">星屑惑船</a>
+<a href="work4.html">餅世とへんてこたち</a>
+ <a href="work3.html">その他</a>
+</nav>
+</body>
+</html>
+
